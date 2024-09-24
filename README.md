@@ -1,5 +1,7 @@
 ## Projeto ATD I - 3TRI - Aplicação de Cadastro e Login
 
+・┆✦ʚ♡ɞ✦ ┆・・┆✦ʚ♡ɞ✦ ┆・・┆✦ʚ♡ɞ✦ ┆・・┆✦ʚ♡ɞ✦ ┆・・┆✦ʚ♡ɞ✦ ┆・
+
 ## Índice
 
 [Descrição](#descri%C3%A7%C3%A3o)
