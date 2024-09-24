@@ -73,6 +73,15 @@ A organização atual do projeto está dividida da seguinte maneira:
 
 - index.php: Arquivo principal que inicializa o sistema.
 
+## Tela de Login:
+
+A tela de login foi implementada para ser simples e funcional. Está localizada em "views/login.php" e inclui os seguintes campos:
+
+- Email: Campo de entrada para o e-mail do usuário.
+- Senha: Campo de entrada para a senha do usuário.
+
+A validação ocorre tanto no front-end quanto no back-end, garantindo que apenas usuários registrados possam acessar o sistema.
+
 
 
 
