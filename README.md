@@ -2,7 +2,7 @@
 
 ・┆✦ʚ♡ɞ✦ ┆・・┆✦ʚ♡ɞ✦ ┆・・┆✦ʚ♡ɞ✦ ┆・・┆✦ʚ♡ɞ✦ ┆・・┆✦ʚ♡ɞ✦ ┆・
 
-## Índice
+## ⚜️ Índice ⚜️
 
 [Descrição](#descri%C3%A7%C3%A3o)
 
@@ -22,7 +22,9 @@
 
 [Autores](#autores)
 
-## Descrição:
+*.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.*
+
+## 📝 Descrição 📝:
 
 Este projeto é uma aplicação de cadastro e login de usuários, com suporte a três tipos de perfis distintos:
 
@@ -34,8 +36,10 @@ Este projeto é uma aplicação de cadastro e login de usuários, com suporte a 
 
 A aplicação inclui telas estilizadas de login e registro, conectadas a um back-end desenvolvido em PHP. Com o tempo, o projeto será expandido para oferecer funcionalidades de CRUD completo para gerenciamento de usuários e um sistema de autenticação robusto.
 
+*.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.
 
-## Funcionalidades:
+
+## 📑 Funcionalidades 📑:
 
 A aplicação oferece as seguintes funcionalidades iniciais:
 
@@ -49,7 +53,9 @@ A aplicação oferece as seguintes funcionalidades iniciais:
 
 - Desenvolvimento Incremental: O projeto está em constante evolução e novas funcionalidades serão adicionadas com o tempo, visando maior segurança e flexibilidade.
 
-## Tecnologias Utilizadas:
+  *.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.*
+
+## 🔧 Tecnologias Utilizadas 🔧 :
 
 - PHP: Backend responsável pela lógica da aplicação e conexão com o banco de dados.
 
@@ -61,7 +67,9 @@ A aplicação oferece as seguintes funcionalidades iniciais:
 
 - Git/GitHub: Controle de versão e colaboração em equipe para o desenvolvimento do projeto.
 
-## Estrutura de Pastas:
+*.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.*
+
+## 📂 Estrutura de Pastas 📂 :
 
 A organização atual do projeto está dividida da seguinte maneira:
 
@@ -75,7 +83,9 @@ A organização atual do projeto está dividida da seguinte maneira:
 
 - index.php: Arquivo principal que inicializa o sistema.
 
-## Tela de Login:
+*.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.*
+
+## 💻 Tela de Login 💻 :
 
 A tela de login foi implementada para ser simples e funcional. Está localizada em "views/login.php" e inclui os seguintes campos:
 
@@ -84,7 +94,9 @@ A tela de login foi implementada para ser simples e funcional. Está localizada 
 
 A validação ocorre tanto no front-end quanto no back-end, garantindo que apenas usuários registrados possam acessar o sistema.
 
-## Tela de Registro:
+*.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.*
+
+## 🖨 Tela de Registro 🖨 :
 
 A tela de registro, localizada em views/register.php, permite que novos usuários criem contas, selecionando um dos três perfis disponíveis:
 
@@ -94,13 +106,17 @@ A tela de registro, localizada em views/register.php, permite que novos usuário
 
 O sistema garante a validação dos dados inseridos e a criação segura do novo usuário no banco de dados.
 
-## Fontes Consultadas:
+*.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.*
+
+## 🔎 Fontes Consultadas 🔍 :
 
 - Documentação oficial do [PHP](https://www.php.net/docs.php).
 - Guia de boas práticas em [HTML5 e CSS3](https://developer.mozilla.org/pt-BR/docs/Web/HTML).
 - Exemplos e dicas de projetos similares no [Stack Overflow](https://stackoverflow.com).
 
-## Autores
+*.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.*
+
+## 👑 Autores 👑
 Nicolly da Silva D'avila - 3ºA
 
 
