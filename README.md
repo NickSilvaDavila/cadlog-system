@@ -82,6 +82,17 @@ A tela de login foi implementada para ser simples e funcional. Está localizada 
 
 A validação ocorre tanto no front-end quanto no back-end, garantindo que apenas usuários registrados possam acessar o sistema.
 
+## Tela de Registro:
+
+A tela de registro, localizada em views/register.php, permite que novos usuários criem contas, selecionando um dos três perfis disponíveis:
+
+- Admin
+- Gestor
+- Colaborador
+
+O sistema garante a validação dos dados inseridos e a criação segura do novo usuário no banco de dados.
+
+
 
 
 
