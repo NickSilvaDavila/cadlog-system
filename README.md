@@ -47,7 +47,7 @@ A aplicação oferece as seguintes funcionalidades iniciais:
 
 - Desenvolvimento Incremental: O projeto está em constante evolução e novas funcionalidades serão adicionadas com o tempo, visando maior segurança e flexibilidade.
 
-#Tecnologias Utilizadas:
+## Tecnologias Utilizadas:
 
 - PHP: Backend responsável pela lógica da aplicação e conexão com o banco de dados.
 
