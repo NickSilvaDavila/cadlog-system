@@ -92,6 +92,13 @@ A tela de registro, localizada em views/register.php, permite que novos usuário
 
 O sistema garante a validação dos dados inseridos e a criação segura do novo usuário no banco de dados.
 
+## Fontes Consultadas:
+
+- Documentação oficial do [PHP](https://www.php.net/docs.php).
+- Guia de boas práticas em [HTML5 e CSS3](https://developer.mozilla.org/pt-BR/docs/Web/HTML).
+- Exemplos e dicas de projetos similares no [Stack Overflow](https://stackoverflow.com).
+
+
 
 
 
