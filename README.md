@@ -98,6 +98,10 @@ O sistema garante a validação dos dados inseridos e a criação segura do novo
 - Guia de boas práticas em [HTML5 e CSS3](https://developer.mozilla.org/pt-BR/docs/Web/HTML).
 - Exemplos e dicas de projetos similares no [Stack Overflow](https://stackoverflow.com).
 
+## Autores
+Nicolly da Silva D'avila - 3ºA
+
+
 
 
 
