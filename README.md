@@ -37,14 +37,14 @@ A aplicação inclui telas estilizadas de login e registro, conectadas a um back
 
 A aplicação oferece as seguintes funcionalidades iniciais:
 
-Cadastro de Usuários: Registro de novos usuários com a opção de escolher entre os perfis Admin, Gestor e Colaborador.
+- Cadastro de Usuários: Registro de novos usuários com a opção de escolher entre os perfis Admin, Gestor e Colaborador.
 
-Login: Sistema de autenticação de usuários com validação de e-mail e senha.
+- Login: Sistema de autenticação de usuários com validação de e-mail e senha.
 
-Validação de Formulários: Implementação de regras básicas para validação de campos obrigatórios (e-mail e senha).
+- Validação de Formulários: Implementação de regras básicas para validação de campos obrigatórios (e-mail e senha).
 
-Estilização: Em processo de desenvolvimento.
+- Estilização: Em processo de desenvolvimento.
 
-Desenvolvimento Incremental: O projeto está em constante evolução e novas funcionalidades serão adicionadas com o tempo, visando maior segurança e flexibilidade.
+- Desenvolvimento Incremental: O projeto está em constante evolução e novas funcionalidades serão adicionadas com o tempo, visando maior segurança e flexibilidade.
 
 
