@@ -59,5 +59,20 @@ A aplicação oferece as seguintes funcionalidades iniciais:
 
 - Git/GitHub: Controle de versão e colaboração em equipe para o desenvolvimento do projeto.
 
+## Estrutura de Pastas:
+
+A organização atual do projeto está dividida da seguinte maneira:
+
+- views: Contém as páginas front-end de login e registro.
+
+- controllers: Responsáveis pela lógica que conecta o front-end ao back-end.
+
+- models: Definem a interação com o banco de dados MySQL.
+
+- _css: Arquivo de estilização para a interface da aplicação.
+
+- index.php: Arquivo principal que inicializa o sistema.
+
+
 
 
