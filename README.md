@@ -32,3 +32,19 @@ Este projeto é uma aplicação de cadastro e login de usuários, com suporte a 
 
 A aplicação inclui telas estilizadas de login e registro, conectadas a um back-end desenvolvido em PHP. Com o tempo, o projeto será expandido para oferecer funcionalidades de CRUD completo para gerenciamento de usuários e um sistema de autenticação robusto.
 
+
+## Funcionalidades:
+
+A aplicação oferece as seguintes funcionalidades iniciais:
+
+Cadastro de Usuários: Registro de novos usuários com a opção de escolher entre os perfis Admin, Gestor e Colaborador.
+
+Login: Sistema de autenticação de usuários com validação de e-mail e senha.
+
+Validação de Formulários: Implementação de regras básicas para validação de campos obrigatórios (e-mail e senha).
+
+Estilização: Em processo de desenvolvimento.
+
+Desenvolvimento Incremental: O projeto está em constante evolução e novas funcionalidades serão adicionadas com o tempo, visando maior segurança e flexibilidade.
+
+
