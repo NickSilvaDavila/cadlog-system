@@ -8,7 +8,7 @@
   </head>
   <body>
       <main>
-        <form action=""method="post">
+        <form action="index.php?action=login"method="post">
             <section>
              <label for="email">Email</label>
              <input type="email" name="nome" id="nome" required>
@@ -19,7 +19,7 @@
 
             </section>
             <button type="submit">Login</button>
-            <a href="">Cadastre-se</a>
+            <a href="inde.php">Cadastre-se</a>
         </form>
       </main>
   </body>
