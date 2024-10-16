@@ -1,30 +1,36 @@
 <?php
-// Inclui arquivos  de controlador necessarios para lidar com diferentes açoes 
-require 'controllers/AuthController.php'; //  Instancia o controlador de autenticaçao
-require 'controllers/UserController.php'; // Instancia o controlador de usuario
+// Inclui arquivos de controlador necessários para lidar com diferentes ações
+require 'controllers/AuthController.php'; // Instancia o controlador de autenticação
+require 'controllers/UserController.php'; // Instancia o controlador de usuário
 require 'controllers/DashboardController.php'; // Instancia o controlador de dashboard
 
-// Cria instanciais dos controladores para utilizar seus metodos
+// Cria instâncias dos controladores para utilizar seus métodos
 $authController = new AuthController();
-$userControler = new UserController();
-// $dashboard = new DashboardController();
+$userController = new UserController(); // Corrigido o nome da variável
+$dashboardController = new DashboardController(); // Corrigido o nome da variável
 
-// Coleta a açao da URL, se nao houver açao definida, usa 'login' como padrao
-$action = $_GET['action'] ?? 'login'; // Usa operador de coalescencia nula (??) para definir 'login' se 'action' nao estiver presente
+// Coleta a ação da URL, se não houver ação definida, usa 'login' como padrão
+$action = $_GET['action'] ?? 'login'; // Usa operador de coalescência nula (??) para definir 'login' se 'action' não estiver presente
 
-switch ($action){
+switch ($action) {
     case 'login':
         $authController->login();
         break;
-        case 'register';
-        $userControler->register();
-        default:
+
+    case 'logout':
+        $authController->logout();
+        break;
+
+    case 'register':
+        $userController->register(); // Corrigido o nome da variável
+        break;
+
+    case 'dashboard':
+        $dashboardController->index(); // Corrigido o nome da variável
+        break;
+
+    default:
         $authController->login();
         break;
-    
-
 }
-
-
-
 ?>
