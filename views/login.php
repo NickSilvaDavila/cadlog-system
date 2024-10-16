@@ -1,26 +1,30 @@
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-  </head>
-  <body>
-      <main>
-        <form action="index.php?action=login"method="post">
+    <link rel="stylesheet" href="../_css/style.css">
+
+
+</head>
+<body>
+    <main>
+        <form action="index.php?action=login" method="post">
             <section>
-             <label for="email">Email</label>
-             <input type="email" name="nome" id="nome" required>
-            </section>
-            <section>
-            <label for="senha">Senha</label>
-            <input type="password" name="senha" id="senha">
+
+                <label for="email">Email</label>
+                <input type="email" name="Nome" id="nome" required>
 
             </section>
+            <section>
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" id="senha">
+            </section>
             <button type="submit">Login</button>
-            <a href="inde.php">Cadastre-se</a>
         </form>
-      </main>
-  </body>
-  </html>
+        <a href="index.php?action=register">Cadastre-se</a>
+    </main>
+</body>
+</html>
