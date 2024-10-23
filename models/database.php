@@ -13,11 +13,10 @@ class Database{
             $password   = '';
 
             // A conexao usa o drive M
-            self::$instance = new PDO("mysqli:host=$host; dbname=$db;" , $user, $password);
+            self::$instance = new PDO("mysqli:host=$host; dbname=$db" , $user, $password);
 
             // Define o modo de erro para exceçoes, facilitando a depuraçao e tratamento dos erros 
-            self::$instance->setAttribute
-            (PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            self::$instance->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         }
         return self::$instance;
     }
