@@ -24,6 +24,10 @@
 
 *.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.*
 
+![image info](login.png)
+
+![image info](register.png)
+
 ## 📝 Descrição 📝:
 
 Este projeto é uma aplicação de cadastro e login de usuários, com suporte a três tipos de perfis distintos:
