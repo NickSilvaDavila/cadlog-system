@@ -32,7 +32,9 @@ switch ($action) {
     case 'list':
         $userController->list(); // Especifique o nome correto do método aqui
         break;
-
+   case 'edit':
+     $id =$_GET['id'];
+     $userController->edit($id);
     default:
         $authController->login();
         break;
