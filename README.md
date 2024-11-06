@@ -24,7 +24,9 @@
 
 *.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.*
 
-![image info](login.png)
+<img src="_img/login.png">
+
+<img src="_img/register.png">
 
 ![image info](register.png)
 
