@@ -4,23 +4,28 @@
 
 ## ⚜️ Índice ⚜️
 
-[Descrição](#descri%C3%A7%C3%A3o)
+- [Descrição](#descrição)
+  
+- [Introdução](#introdução)
 
-[Introdução](#introdu%C3%A7%C3%A3o)
+- [Funcionalidades](#funcionalidades)
 
-[Funcionalidades](#funcionalidades)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
 
-[Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Estrutura de Pastas](#estrutura-de-pastas)
 
-[Estruturas de Pastas](#estrutura-de-pastas)
+- [Tela de Login](#tela-de-login)
 
-[Tela de Login](#tela-de-login)
+- [Tela de Registro](#tela-de-registro)
 
-[Tela de Registro](#tela-de-registro)
+- [Tela de Edição de Usuário](#tela-de-edição-de-usuário)
 
-[Fontes Consultadas](#fontes-consultadas)
+- [Função de Exclusão](#função-de-exclusão)
 
-[Autores](#autores)
+- [Fontes Consultadas](#fontes-consultadas)
+
+- [Autores](#autores)
+
 
 *.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.*
 
@@ -28,66 +33,71 @@
 
 <img src="_img/register.png">
 
-![image info](register.png)
 
 ## 📝 Descrição 📝:
 
-Este projeto é uma aplicação de cadastro e login de usuários, com suporte a três tipos de perfis distintos:
+Esta aplicação foi desenvolvida para gerenciamento de usuários com funcionalidades de cadastro e login. Ela suporta três níveis de perfis de usuário:
 
-- Admin- : Usuário com controle total sobre o sistema, capaz de gerenciar outros usuários e acessar dados sensíveis.
-
-- Gestor- : Usuário com permissões moderadas, responsável pela administração de sua equipe.
-
-- Colaborador- : Usuário comum, com permissões restritas e limitadas às funcionalidades básicas.
+- **Admin**: Acesso total ao sistema, incluindo a administração e gestão de usuários.
+- **Gestor**: Acesso com permissões de administração para o gerenciamento de sua equipe.
+- **Colaborador**: Acesso restrito, limitado a funções básicas.
 
 A aplicação inclui telas estilizadas de login e registro, conectadas a um back-end desenvolvido em PHP. Com o tempo, o projeto será expandido para oferecer funcionalidades de CRUD completo para gerenciamento de usuários e um sistema de autenticação robusto.
 
 *.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.
 
+## Introdução
+
+Este sistema foi criado para simplificar o gerenciamento de usuários em níveis de permissão variados, permitindo controle e personalização detalhada dos acessos de cada perfil. A interface do sistema foi projetada para ser intuitiva e fácil de usar, com foco em eficiência para as operações de cadastro e login.
+
+Este documento oferece um guia para desenvolvedores, incluindo detalhes sobre a estrutura do sistema e as tecnologias utilizadas, para facilitar tanto a manutenção quanto a adição de novas funcionalidades ao projeto.
 
 ## 📑 Funcionalidades 📑:
 
 A aplicação oferece as seguintes funcionalidades iniciais:
 
-- Cadastro de Usuários: Registro de novos usuários com a opção de escolher entre os perfis Admin, Gestor e Colaborador.
+As funcionalidades principais da aplicação incluem:
 
-- Login: Sistema de autenticação de usuários com validação de e-mail e senha.
+- **Cadastro de Usuários**: Permite o registro de novos usuários com escolha de perfil entre Admin, Gestor e Colaborador.
 
-- Validação de Formulários: Implementação de regras básicas para validação de campos obrigatórios (e-mail e senha).
+- **Login**: Sistema de autenticação robusto com validação de e-mail e senha.
 
-- Estilização: Em processo de desenvolvimento.
+- **Validação de Formulários**: Regras para garantir que campos obrigatórios (e-mail e senha) sejam preenchidos corretamente.
 
-- Desenvolvimento Incremental: O projeto está em constante evolução e novas funcionalidades serão adicionadas com o tempo, visando maior segurança e flexibilidade.
+- **Estilização**: Interface minimalista e acessível com uma paleta de cores azul e dourado para facilitar a navegação.
+
+- **Desenvolvimento Incremental**: O projeto está em constante aprimoramento, com novas funcionalidades sendo adicionadas para segurança e flexibilidade.
 
   *.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.*
 
 ## 🔧 Tecnologias Utilizadas 🔧 :
 
-- PHP: Backend responsável pela lógica da aplicação e conexão com o banco de dados.
+- **PHP**: Backend responsável pela lógica da aplicação e pela conexão com o banco de dados.
+ 
+- **HTML5**: Estrutura de página para semântica e acessibilidade.
 
-- HTML5: Estrutura das páginas, fornecendo semântica e acessibilidade.
+- **CSS3**: Estilos aplicados na interface, com foco em usabilidade e responsividade.
 
-- CSS3: Estilização das interfaces, focando na experiência do usuário e responsividade.
+- **MySQL**: Banco de dados utilizado para armazenar informações dos usuários.
 
-- MySQL: Banco de dados utilizado para armazenar informações dos usuários.
-
-- Git/GitHub: Controle de versão e colaboração em equipe para o desenvolvimento do projeto.
+- **Git/GitHub**: Controle de versão e colaboração em equipe para gerenciar o desenvolvimento.
 
 *.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.*
 
 ## 📂 Estrutura de Pastas 📂 :
 
-A organização atual do projeto está dividida da seguinte maneira:
 
-- views: Contém as páginas front-end de login e registro.
+A organização dos arquivos do projeto é dividida da seguinte forma:
 
-- controllers: Responsáveis pela lógica que conecta o front-end ao back-end.
+- **views**: Contém as páginas front-end para login e registro.
 
-- models: Definem a interação com o banco de dados MySQL.
+- **controllers**: Lógica de controle que conecta o front-end ao back-end.
 
-- _css: Arquivo de estilização para a interface da aplicação.
+- **models**: Interações com o banco de dados MySQL.
 
-- index.php: Arquivo principal que inicializa o sistema.
+- **_css**: Arquivos de estilo para a interface da aplicação.
+
+- **index.php**: Arquivo principal que inicializa o sistema.
 
 *.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.*
 
@@ -111,6 +121,19 @@ A tela de registro, localizada em views/register.php, permite que novos usuário
 - Colaborador
 
 O sistema garante a validação dos dados inseridos e a criação segura do novo usuário no banco de dados.
+
+##  🖨 Tela de Edição de Usuário  🖨 :
+
+Localizada em `views/edit_user.php`, esta tela permite que os dados do usuário sejam modificados. O acesso à edição é permitido apenas para Admins e Gestores.
+
+##  🖨 Função de Exclusão  🖨 :
+
+A aplicação inclui a funcionalidade de exclusão de usuários, controlada por níveis de permissão:
+
+- **Admin**: Pode excluir qualquer usuário. Uma confirmação é solicitada ao clicar no botão "Excluir" para prevenir exclusões acidentais.
+- **Gestor/Colaborador**: Não possuem permissão para excluir outros usuários.
+
+Este controle de acesso assegura que apenas perfis com as permissões apropriadas possam realizar ações críticas, reforçando a segurança do sistema.
 
 *.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.*
 
