@@ -35,6 +35,8 @@
 
 <img src="_img/list_users.png">
 
+<img src="_img/tela_inicio.png">
+
 
 ## 📝 Descrição 📝:
 
