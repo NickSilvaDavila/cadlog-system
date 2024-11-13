@@ -1,18 +1,18 @@
 <?php
-  session_start();
-
-   if(isset($_SESSION['perfil'])):
-    
-?>
-
-<!DOCTYPE html>
-<html lang="pt-br">
+session_start(); // Inicia a sessão, caso não tenha sido iniciada
  
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Usuários</title>
-    <style>
+// Verifica se o array $_SESSION e a chave 'perfil' estão definidos
+if (isset($_SESSION['perfil'])):
+?>
+    <!DOCTYPE html>
+    <html lang="pt-br">
+ 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lista de Usuários</title>
+        <link rel="stylesheet" href="css/list.css">
+        <style>
         /* Reset de estilo padrão */
         * {
             margin: 0;
@@ -30,7 +30,7 @@
             color: #333;
         }
 
-        .container {
+        main, div {
             background: rgba(255, 255, 255, 0.9);
             backdrop-filter: blur(10px);
             padding: 2.5rem;
@@ -62,42 +62,38 @@
             letter-spacing: 2px;
         }
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 1.5rem;
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
         }
 
-        th, td {
-            padding: 1rem;
-            text-align: left;
-            border-bottom: 1px solid #ddd;
-        }
-
-        th {
-            background-color: #5a3f95;
-            color: white;
-        }
-
-        tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-
-        a {
-            color: #fc5c7d;
-            text-decoration: none;
+        label {
             font-size: 1rem;
-            transition: color 0.3s ease;
+            color: #555;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
         }
 
-        a:hover {
-            color: #d9466e;
-            text-decoration: underline;
+        input, select {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid transparent;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: border-color 0.3s, box-shadow 0.3s;
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
-        .btn {
-            display: inline-block;
-            padding: 0.75rem 1.5rem;
+        input:focus, select:focus {
+            border-color: #fc5c7d;
+            outline: none;
+            box-shadow: 0 0 12px rgba(252, 92, 125, 0.5);
+        }
+
+        button {
+            padding: 0.75rem;
             background: linear-gradient(45deg, #5a3f95, #fc5c7d);
             color: white;
             border: none;
@@ -110,54 +106,85 @@
             transition: background 0.3s ease, transform 0.2s ease;
         }
 
-        .btn:hover {
+        button:hover {
             background: linear-gradient(45deg, #3e2d6d, #e34867);
             transform: translateY(-5px);
         }
 
-        .btn:active {
+        button:active {
             transform: translateY(2px);
         }
-    </style>
-</head>
- 
-<body class="<?= $_SESSION['perfil'] ?>"> <!-- Define a classe com base no perfil do usuário -->
-    <div class="container">
-        <h2>Lista de Usuários</h2>
-        <table class="styled-table">
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Nome</th>
-                    <th>Email</th>
-                    <th>Perfil</th>
-                    <th>Ações</th>
-                </tr>
-            </thead>
-            <tbody>
-                <?php foreach($users as $user): ?> <!-- Corrigido a sintaxe do foreach -->
-                <tr>
-                    <td><?= $user['id'] ?></td> <!-- Corrigido para exibir corretamente os valores -->
-                    <td><?= $user['nome'] ?></td>
-                    <td><?= $user['email'] ?></td>
-                    <td><?= $user['perfil'] ?></td>
-                    <td>
-                        <?php if($_SESSION['perfil'] == 'admin' || $_SESSION['perfil'] == 'gestor'): ?>
-                            <a href="edit.php?id=<?= $user['id'] ?>">Editar</a> <!-- Link para a edição -->
-                            <a href="delete.php?id=<?= $user['id'] ?>">Excluir</a> <!-- Link para exclusão -->
-                        <?php endif; ?>
-                    </td>
-                </tr>
-                <?php endforeach; ?> <!-- Fim do foreach -->
-            </tbody>
-        </table>
- 
-        <a href="dashboard.php" class="btn">Voltar ao Dashboard</a> <!-- Link para voltar ao dashboard -->
-    </div>
-</body>
- 
-</html>
 
+        a {
+            margin-top: 1rem;
+            color: #fc5c7d;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #d9466e;
+            text-decoration: underline;
+        }
+
+        /* Estilo adicional para bordas elegantes */
+        input, select {
+            border: 2px solid #ddd;
+        }
+
+        input:focus, select:focus {
+            border-color: #5a3f95;
+            box-shadow: 0 0 12px rgba(90, 63, 149, 0.5);
+        }
+    </style>
+    </head>
+ 
+    <body class="<?= $_SESSION['perfil'] ?>"> <!-- Define a classe com base no perfil do usuário -->
+        <div class="container">
+            <h2>Lista de Usuários</h2>
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Email</th>
+                        <th>Perfil</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+ 
+                    <?php foreach ($users as $user): ?>
+                        <tr>
+                            <td><?= $user['id'] ?></td>
+                            <td><?= $user['nome'] ?></td>
+                            <td><?= $user['email'] ?></td>
+                            <td><?= $user['perfil'] ?></td>
+                            <td>
+                                <!-- Permitir que admin e gestor editem -->
+                                <?php if ($_SESSION['perfil'] == 'admin' || $_SESSION['perfil'] == 'gestor'): ?>
+                                    <a href="index.php?action=edit&id=<?= $user['id'] ?>" class="btn">Editar</a>
+                                <?php endif; ?>
+ 
+                                <!-- Permitir que apenas admin exclua -->
+                                <?php if ($_SESSION['perfil'] == 'admin'): ?>
+                                    <a href="index.php?action=delete&id=<?=$user['id'] ?>" class="btn btn-delete" onclick="return confirm('Tem certeza que deseja excluir?')">Excluir</a>
+                                <?php endif; ?>
+                            </td>
+                        </tr>
+                    <?php endforeach; ?>
+ 
+                </tbody>
+            </table>
+ 
+            <a href="index.php?action=dashboard" class="btn">Voltar ao Dashboard</a>
+        </div>
+    </body>
+ 
+    </html>
+ 
 <?php else: ?>
-    <p>Erro: Você não tem permissão para visualizar essa página</p>
+    <!-- Se $_SESSION['perfil'] não estiver definido, exibe uma mensagem -->
+    <p>Erro: Você não tem permissão para visualizar esta página.</p>
 <?php endif; ?>

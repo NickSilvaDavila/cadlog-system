@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    
+    <link rel="stylesheet" href="css/login.css">
     <style>
         /* Reset de estilo padrão */
         * {
@@ -138,7 +138,7 @@
         <form action="index.php?action=login" method="post">
             <section>
                 <label for="email">Email</label>
-                <input type="email" name="Nome" id="nome" required>
+                <input type="email" name="email" id="nome" required>
             </section>
             <section>
                 <label for="senha">Senha</label>
