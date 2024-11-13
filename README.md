@@ -33,7 +33,7 @@
 
 <img src="_img/register.png">
 
-<img src="_img/Lista de usuarios.png">
+<img src="_img/list_users.png">
 
 
 ## 📝 Descrição 📝:
